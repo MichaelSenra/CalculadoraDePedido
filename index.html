@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora de Estoque</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Calculadora de Estoque</h1>
+
+        <!-- Formulário para adicionar novos produtos -->
+        <div class="input-group">
+            <label for="produto">Nome do Produto:</label>
+            <input type="text" id="produto">
+        </div>
+        <div class="input-group">
+            <label for="estoque">Estoque atual (kg):</label>
+            <input type="number" id="estoque">
+        </div>
+        <div class="input-group">
+            <label for="vendas">Vendas médias diárias (kg):</label>
+            <input type="number" id="vendas">
+        </div>
+        <div class="input-group">
+            <label for="dias">Dias de giro:</label>
+            <input type="number" id="dias">
+        </div>
+        <button id="add">Adicionar Produto</button>
+        <button id="calcular">Calcular</button>
+
+        <!-- Área para exibir produtos -->
+        <div id="produtos-list"></div>
+
+        <!-- Resultado da calculadora -->
+        <div id="resultado"></div>
+    </div>
+    <script src="app.js"></script>
+</body>
+</html>
